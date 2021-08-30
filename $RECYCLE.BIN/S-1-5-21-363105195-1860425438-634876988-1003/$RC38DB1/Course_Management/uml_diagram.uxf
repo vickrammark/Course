@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>50</y>
+      <w>210</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+User
+--
+-id: int
+-username:String
+-email:String
+-password:String
+-profile:String
+-roles:Set&lt;Role&gt;
+-courses:Set&lt;Course&gt;
+--
++getCourses():Set&lt;Course&gt;
++setCourses():void
++getId():int
++setId():void
++getUsername():String
++setUsername():void
++getEmail():String
++setEmail():void
++getPassword():String
++setPassword():void
++getRoles():Set&lt;Role&gt;
++setRoles():void
++getProfile():String
++setProfile():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>50</y>
+      <w>210</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+Course
+--
+-id: int
+-name:String
+-description:String
+-image:String
+-status:String
+-users:Set&lt;User&gt;
+--
++getId():int
++setId():void
++getName():String
++setName():void
++getUsers():Set&lt;User&gt;
++setUsers():void
++getDescription():String
++setDescription():void
++getImage():String
++setImage():void
++getStatus():String
++setStatus():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>60</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;class&gt;&gt;
+Role
+--
+-id: int
+-authority:String
+-users:User
+--
++getId():int
++setId():void
++getAuthority:String
++setAuthority:void
++getUsers:User
++setUsers:void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
